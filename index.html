@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Anime</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo">N</div>
+    <button aria-label="Search" title="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <button aria-label="Home" title="Home"><i class="fa-solid fa-house"></i></button>
+    <button aria-label="Trending" title="Trending"><i class="fa-solid fa-arrow-trend-up"></i></button>
+    <button aria-label="Movies" title="Movies"><i class="fa-solid fa-tv"></i></button>
+    <button aria-label="My List" title="My List" id="myListButton"><i class="fa-solid fa-bookmark"></i></button>
+  </aside>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <p class="hero-logo">DEMON <span>SLAYER</span></p>
+        <div class="metadata">
+          <span class="match">98% Match</span>
+          <span>2023</span>
+          <span>4 Seasons</span>
+          <span class="rating">HD</span>
+          <span class="rating">16+</span>
+        </div>
+        <p class="liked">👍 Most Liked · Popular with anime fans</p>
+        <p class="description">
+          After a demon attack changes his life, Tanjiro embarks on a
+          dangerous journey to protect his sister and fight powerful demons.
+        </p>
+        <div class="hero-buttons">
+          <button class="play-button" id="playHero">
+            <i class="fa-solid fa-play"></i> Play
+          </button>
+          <button class="info-button" id="moreInfo">
+            <i class="fa-solid fa-circle-info"></i> More Info
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="content">
+      <div id="movieRows"></div>
+    </div>
+  </main>
+
+  <dialog id="detailsDialog">
+    <button class="close-dialog" id="closeDialog" aria-label="Close">✕</button>
+    <h2 id="dialogTitle">Title</h2>
+    <p id="dialogDescription"></p>
+  </dialog>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
