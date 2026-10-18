@@ -2,6 +2,7 @@
 const movies = [
   {
     title: "Demon Slayer",
+     image: "banner.jpg",
     description: "Tanjiro begins a dangerous journey to protect his sister."
   },
   {
